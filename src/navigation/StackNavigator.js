@@ -6,6 +6,7 @@ import AboutScreen from "../screens/AboutScreen";
 import ContactScreen from "../screens/ContactScreen";
 import ChatScreen from "../screens/ChatScreen";
 import FavaroiteScreen from "../screens/FavaroiteScreen";
+import AddProperties from "../screens/AddProperties";
 
 const Stack = createStackNavigator();
 
@@ -40,6 +41,24 @@ const ContactStackNavigator = () => {
     </Stack.Navigator>
   );
 };
+
+const AddPropertyStackNavigator = () =>{
+  return(
+    <Stack.Navigator
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: "#9AC4F8",
+        },
+        headerTintColor: "white",
+        headerBackTitle: "Back",
+      }}
+    >
+
+<Stack.Screen name="AddProperties" component={AddProperties} />
+    </Stack.Navigator>  
+  )
+}
+
 
 const HomeStackNavigator = () => {
   return (
@@ -94,5 +113,6 @@ export {
   HomeStackNavigator,
   ContactStackNavigator,
   ChatStackNavigator,
-  FavaroiteStackNavigator
+  FavaroiteStackNavigator,
+  AddPropertyStackNavigator
 };

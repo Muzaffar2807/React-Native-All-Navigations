@@ -42,6 +42,13 @@ function DrawerContent({ navigation , TabNavigation}) {
           >
             <Text style={{ color: '#fff' }}>Favaroite</Text>
           </Pressable>
+
+          <Pressable  
+            onPress={() => navigation.navigate('Add Properties')}
+            style={{ backgroundColor: '#9AC4F8', padding: 8 ,margin : 5}}
+          >
+            <Text style={{ color: '#fff' }}>Add Property</Text>
+          </Pressable>
         </View>
       </DrawerContentScrollView>
       
