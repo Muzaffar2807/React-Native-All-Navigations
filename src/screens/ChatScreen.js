@@ -4,7 +4,7 @@ import React from 'react'
 const ChatScreen = ({ navigation }) => {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-     <Text>Chat</Text>
+     <Text>This is a Chat Screen</Text>
      <Button title='Click TO Open Drawer' onPress={() => navigation.openDrawer()}/>
   </View>
   )

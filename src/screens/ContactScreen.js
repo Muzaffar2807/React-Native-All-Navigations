@@ -1,9 +1,10 @@
-import { View, Button, StyleSheet} from 'react-native'
+import { View, Button, StyleSheet, Text} from 'react-native'
 import React from 'react'
 
 const ContactScreen = ({ navigation }) => {
   return (
     <View style={styles.center}>
+      <Text>This is a Contact Screen</Text>
        <Button 
           title="Click to open Drawer" 
           onPress={() => navigation.openDrawer()}

@@ -6,7 +6,7 @@ import {
   DrawerItemList,
 } from "@react-navigation/drawer";
 
-function DrawerContent({ navigation }) {
+function DrawerContent({ navigation , TabNavigation}) {
   return (
     <View style={{ flex:1 }}>
       <DrawerContentScrollView 
@@ -16,7 +16,7 @@ function DrawerContent({ navigation }) {
         
         <View style={{ flex: 1,   paddingTop: 10, color: '#fff' }}>
           <Pressable  
-            onPress={() => navigation.goBack("Home")}
+            onPress={() => navigation.navigate('Home')}
             style={{ backgroundColor: '#9AC4F8', padding: 8 ,   margin: 5}}
           >
             <Text style={{ color: '#fff' }}>Home</Text>

@@ -17,7 +17,7 @@ const DrawerNavigator = () => {
       screenOptions={{ drawerType: "front", headerShown: false}}
       
     >
-      <Drawer.Screen name="Home" component={TabNavigator} />
+      <Drawer.Screen name="HomeScreen" component={TabNavigator} />
     </Drawer.Navigator>
   );
 }
